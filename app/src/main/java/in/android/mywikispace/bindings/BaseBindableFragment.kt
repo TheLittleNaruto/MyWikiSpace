@@ -11,12 +11,12 @@ import android.view.ViewGroup
 
 abstract class BaseBindableFragment: Fragment() {
 
-    var baseViewModel: BaseViewModel? = null;
+    var baseViewModel: BaseViewModel? = null
     var viewDataBinding: ViewDataBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        baseViewModel = getViewModel();
+        baseViewModel = getViewModel()
     }
 
     fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceStat: Bundle?, @LayoutRes layoutResId: Int,

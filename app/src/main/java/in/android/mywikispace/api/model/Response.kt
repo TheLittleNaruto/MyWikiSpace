@@ -3,9 +3,6 @@ package `in`.android.mywikispace.api.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-import `in`.android.mywikispace.api.model.Search
-import `in`.android.mywikispace.api.model.Searchinfo
-import `in`.android.mywikispace.api.model.Continue
 
 
 class Response {

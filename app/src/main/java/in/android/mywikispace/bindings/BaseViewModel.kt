@@ -11,7 +11,5 @@ abstract class BaseViewModel {
     abstract fun onPause()
     abstract fun onDestroy()
 
-    open fun onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle) {
-
-    }
+    open fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,layoutResId: Int, savedInstanceState: Bundle?) {    }
 }

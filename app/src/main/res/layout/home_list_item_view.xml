@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="homeItemViewModel"
+            type="in.android.mywikispace.ui.viewmodel.HomeItemViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@{homeItemViewModel.search.title}"
+            style="@style/title_text_view_style" />
+
+        <TextView
+            android:text="@{homeItemViewModel.search.snippet}"
+            style="@style/snippet_text_view_style" />
+
+    </LinearLayout>
+</layout>

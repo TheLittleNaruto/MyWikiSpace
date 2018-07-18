@@ -11,22 +11,6 @@ abstract class BaseBindableActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         baseViewModel = getViewModel()
-        baseViewModel?.onCreate()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        baseViewModel?.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        baseViewModel?.onPause()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        baseViewModel?.onDestroy()
     }
 
     abstract fun getViewModel(): BaseViewModel

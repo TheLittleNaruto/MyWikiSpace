@@ -8,6 +8,9 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.arch.lifecycle.ViewModelProviders
+
+
 
 abstract class BaseBindableFragment: Fragment() {
 
@@ -29,21 +32,6 @@ abstract class BaseBindableFragment: Fragment() {
         viewDataBinding?.setVariable(bindingVariable, baseViewModel)
         viewDataBinding?.setLifecycleOwner(this)
         return viewDataBinding?.root
-    }
-
-    override fun onResume() {
-        super.onResume()
-        baseViewModel?.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        baseViewModel?.onPause()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        baseViewModel?.onDestroy()
     }
 
     abstract fun getViewModel(): BaseViewModel

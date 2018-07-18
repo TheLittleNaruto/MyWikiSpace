@@ -1,17 +1,7 @@
 package `in`.android.mywikispace.bindings
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.ViewGroup
+import android.arch.lifecycle.ViewModel
 
-abstract class BaseViewModel {
+abstract class BaseViewModel: ViewModel() {
 
-    abstract fun onCreate()
-    abstract fun onResume()
-    abstract fun onPause()
-    abstract fun onDestroy()
-
-    open fun onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle) {
-
-    }
 }

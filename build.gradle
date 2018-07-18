@@ -45,4 +45,5 @@ ext{
     rxJavaAdapterVersion = "2.3.0"
     rxJavaVersion = "2.1.6"
     rxAndroidVersion = "2.0.1"
+    rxKotlinVersion = "2.2.0"
 }

@@ -27,6 +27,10 @@ android {
     dataBinding {
         enabled = true
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 androidExtensions {
@@ -62,6 +66,7 @@ dependencies {
     implementation "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.rxJavaAdapterVersion}"
     implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxJavaVersion}"
     implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxAndroidVersion}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${rootProject.ext.rxKotlinVersion}"
     // ViewModel and LiveData
     implementation "android.arch.lifecycle:extensions:${rootProject.ext.architectureComponentVersion}"
     annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.architectureComponentVersion}"
